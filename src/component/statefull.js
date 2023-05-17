@@ -22,7 +22,7 @@ const products = [
 class Statefull extends React.Component{
           
 state={
-    cart:[],
+    cart:[""],
     total:0
 }
 
@@ -54,8 +54,9 @@ remove = (product) => {
         return( 
         <div className="wrapper">
             <div>
-                Shopping cart: {this.state.cart.length} total items
+                Shopping cart: {this.state.cart.length-1} total items
             </div>
+            <div>List of Items:{this.state.cart.join(",")}</div>
             <div>Total Amount: {this.state.total}</div>
             {products.map(product =>(
             <div key={product.name}>
