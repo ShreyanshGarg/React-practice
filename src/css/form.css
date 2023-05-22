@@ -70,7 +70,16 @@ th{
     padding-bottom: 12px;
     text-align: left;
     background-color:#1c0f36;
+    color: black;
+    background: whitesmoke;
+    padding-left: 8px;
+}
+.oprBtn{
+    border-radius: 5px;
+    background-color: #1c0f36;
+    padding: 4px 24px;
+    font-size: 11px;
     opacity: 0.2;
     color: white;
-    padding-left: 8px;
+    font-weight: 600;
 }
